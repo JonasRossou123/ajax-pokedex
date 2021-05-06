@@ -46,12 +46,17 @@
 
             //adding evolve
             evolve.innerText = x.evolves_from_species.name;
-            if(evolve.innerHTML == ""){
+
+
+            if(evolve.innerText == null){
                 alert("Span is empty..");
             }
+
             else {
-                let urlspriteevolve = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/" + (x.id-1) + ".png";
-                imageevolve.setAttribute("src", urlspriteevolve)
+                getData(evolve.innerText, (y) => {
+                    let urlspriteevolve = y.sprites.front_default;
+                    imageevolve.setAttribute("src", urlspriteevolve)
+                })
             }
 
             console.log(x)
