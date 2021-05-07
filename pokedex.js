@@ -16,6 +16,9 @@
     let moves = document.getElementById('moves');
     let evolve = document.getElementById("evolve");
     let imageevolve = document.getElementById("imageevolve")
+    let dhidden = document.getElementById("dhidden")
+
+
 
 
         document.getElementById('run').addEventListener('click', () => {
@@ -46,6 +49,7 @@
 
             //adding evolve from
             if (x.evolves_from_species) {
+                dhidden.style.display = 'inline-block';
                 evolve.innerText = x.evolves_from_species.name;
                 getData(x.evolves_from_species.name, (y) => {
                     let urlspriteevolve = y.sprites.front_default;
@@ -53,7 +57,9 @@
                 })
             }
             else {
-                evolve.innerText = "this Pokémon has not been evolved"
+                dhidden.style.display = 'none';
+                imageevolve.setAttribute("src", '')
+                evolve.innerText = "This Pokémon has not been evolved yet, you gotta train them you damn fool!"
             }
 
         });

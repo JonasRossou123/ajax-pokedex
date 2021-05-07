@@ -1,6 +1,9 @@
 
 
-
+#body{
+    background-image: url("https://i.pinimg.com/originals/7c/67/8b/7c678bffd31dc92dc80d95d471b0e83d.png");
+    width:100%
+}
 
 
 #global{
@@ -19,16 +22,17 @@
 #leftup{
     width: 550px;
     height: 175px;
-    background-color: palevioletred;
+    background-color: #e21639;
     border-left: 5px solid black;
     border-top: 5px solid black;
     border-right: 5px solid black;
     position: relative;
+    border-top-left-radius: 10px;
 }
 
 #leftup::before{
     content: '';
-    background-color: darkred;
+    background-color: #e61515;
     width: 250px;
     height: 80px;
     transform: skew(-30deg);
@@ -42,7 +46,7 @@
 
 #leftup::after{
     content: '';
-    background-color: darkred;
+    background-color: #e61515;
     width: 70px;
     height: 80px;
     border-top: 5px solid black ;
@@ -54,16 +58,169 @@
 
 
 
+
 #left{
     width:550px;
     height: 625px;
-    background-color: darkred;
+    background-color: #e61515;
     border: 5px solid black;
+    position: relative;
+    left:0;
+    border-bottom-left-radius: 10px;
+}
+
+#leftpart1{
+
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left:0;
     position: relative;
 }
 
-#middle{
+#stylepicturepoke{
+    top: 50%;
+    width: 325px;
+    height: 250px;
+    background-color: darkseagreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    }
 
+#leftpart2{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left:0;
+}
+
+.button {
+    background-color: #ddd;
+    border: none;
+    color: black;
+    width: 40px;
+    height: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    border-radius: 16px;
+}
+
+.button1 {
+    background-color: cornflowerblue;
+    border: none;
+    color: black;
+    width: 40px;
+    height: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    border-radius: 16px;
+}
+
+#leftpart3{
+    height: 275px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    left:0;
+    }
+
+#wrappercircle{
+
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#circleone{
+
+}
+
+#circleoneone{
+    width: 40px;
+    height:40px;
+    border-radius:50px;
+    background-color: greenyellow;
+}
+
+#circletwo{
+
+}
+
+#circletwoone{
+    width:40px;
+    height:40px;
+    border-radius:50px;
+    background-color: blue;
+}
+
+
+
+#wrappernameid{
+    top: 50%;
+    width: 200px;
+    height: 100px;
+    background-color: darkseagreen;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+}
+
+#id{
+    font-size: 18px;
+    color:beige;
+    margin: 0;
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+}
+
+#name{
+    font-size: 18px;
+    color:beige;
+    margin: 0;
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+}
+
+#wrapperx{
+    font-size: 90px;
+    margin-bottom: 90px;
+
+}
+
+#x{
+    text-shadow: 2px 2px yellow;
+    border-bottom: grey;
+
+}
+
+#image{
+    margin: 0 auto;
+    text-indent:-9999px
+}
+
+#middle{
+position: relative;
+}
+
+#rowodd1{
+    background-color: grey;
+    height: 20px;
+    width: 20px;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    background: linear-gradient(90deg, #891313 0, #b31818 30%, #e61515 45%, #fd5555 65%, #e61515 95%);
+    border-top-right-radius: 10px;
+    border-right: 5px solid black;
 }
 
 .roweven{
@@ -71,6 +228,7 @@
     width: 20px;
     background-color: grey;
     background: linear-gradient(90deg, #891313 0, #b31818 30%, #e61515 45%, #fd5555 65%, #e61515 95%);
+    border-right: 5px solid black;
     }
 
 .rowodd {
@@ -79,6 +237,7 @@
     width: 20px;
     border-top: 5px solid black;
     border-bottom: 5px solid black;
+    border-right: 5px solid black;
     background: linear-gradient(90deg, #891313 0, #b31818 30%, #e61515 45%, #fd5555 65%, #e61515 95%);
 }
 
@@ -91,16 +250,11 @@
     width: 550px;
     height: 100px;
     background-color: white;
-    border-left: 5px solid black;
+
+
 }
 
-#right{
-    width:550px;
-    height: 700px;
-    background-color: darkred;
-    border:5px solid black;
-    position: relative;
-}
+
 
 #right::before{
     content: '';
@@ -126,4 +280,160 @@
     position : absolute;
     top: -5px;
     right:-5px;
+}
+
+#right{
+    width:550px;
+    height: 700px;
+    background-color: #e61515;
+    border-bottom:5px solid black;
+    border-right:5px solid black;
+    border-top:5px solid black;
+    position: relative;
+    border-bottom-right-radius: 10px;
+}
+
+
+
+#rightpart1{
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#rightpart2{
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#pokemon{
+    font-size: 18px;
+    color:beige;
+    margin: 0;
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+    background-color: dimgrey;
+
+}
+
+#run{
+    background-color: dimgrey;
+    font-size: 18px;
+    color:beige;
+    margin: 0;
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+
+}
+
+#run:active:visited{
+    border-color: none;
+}
+
+#rightpart3{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#stylemoves{
+    top: 50%;
+    width: 325px;
+    height: 170px;
+    background-color: darkseagreen;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    border-radius: 10px;
+}
+
+#moves{
+    font-size: 18px;
+    color:beige;
+    margin: 0;
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+}
+
+#rightpart4{
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#dhidden{
+    display:none;
+    font-size: 18px;
+    color:beige;
+    margin: 0;
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+       }
+
+#evolve{
+    display: inline-flex;
+    font-size: 18px;
+    color:beige;
+    margin: 0;
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+
+}
+
+
+
+#styleevolve{
+    top: 50%;
+    width: 425px;
+    height: 50px;
+    background-color: lightskyblue;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border-radius: 10px;
+}
+
+#phidden{
+    content: "This Pokémon once was a: "
+}
+
+#rightpart5{
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#stylepictureevolve{
+    top: 50%;
+    width: 225px;
+    height: 120px;
+    background-color: darkseagreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+#imageevolve{
+    text-indent:-9999px
+}
+
+
+#rightpart6{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
