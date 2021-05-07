@@ -44,23 +44,18 @@
                 moves.appendChild(list)
             }
 
-            //adding evolve
-            evolve.innerText = x.evolves_from_species.name;
-
-
-            if(evolve.innerText == null){
-                alert("Span is empty..");
-            }
-
-            else {
-                getData(evolve.innerText, (y) => {
+            //adding evolve from
+            if (x.evolves_from_species) {
+                evolve.innerText = x.evolves_from_species.name;
+                getData(x.evolves_from_species.name, (y) => {
                     let urlspriteevolve = y.sprites.front_default;
                     imageevolve.setAttribute("src", urlspriteevolve)
                 })
             }
+            else {
+                evolve.innerText = "this Pokémon has not been evolved"
+            }
 
-            console.log(x)
-            //output.innerHTML = x[0].ability.name
         });
     })
 
