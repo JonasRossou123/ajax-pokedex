@@ -1,6 +1,6 @@
 
 
-#body{
+body{
     background-image: url("https://i.pinimg.com/originals/7c/67/8b/7c678bffd31dc92dc80d95d471b0e83d.png");
     width:100%
 }
@@ -88,6 +88,8 @@
     justify-content: center;
     align-items: center;
     border-radius: 10px;
+    border: 2px solid black;
+    margin-top: 18px;
     }
 
 #leftpart2{
@@ -168,11 +170,12 @@
     top: 50%;
     width: 200px;
     height: 100px;
-    background-color: darkseagreen;
+    background-color: dimgrey;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     border-radius: 10px;
+    border: 2px solid black;
 }
 
 #id{
@@ -249,7 +252,7 @@ position: relative;
 #rightup{
     width: 550px;
     height: 100px;
-    background-color: white;
+    background-color: transparent;
 
 
 }
@@ -258,7 +261,7 @@ position: relative;
 
 #right::before{
     content: '';
-    background-color: white;
+    background-color: #7acaf9;
     width: 250px;
     height: 80px;
     transform: skew(30deg);
@@ -272,7 +275,7 @@ position: relative;
 
 #right::after{
     content: '';
-    background-color: white;
+    background-color: #7acaf9;
     width: 150px;
     height: 80px;
     border-right: 0px solid blue;
@@ -318,7 +321,23 @@ position: relative;
     font-family: "Courier New", monospace;
     font-weight: bold;
     background-color: dimgrey;
+    border-radius: 10px;
+    margin-top:13px;
+    border: 2px solid black;
+    text-align: center;
+}
 
+#pokemon:focus {
+    outline:0;
+}
+
+#pokemon::placeholder{
+    font-size: 18px;
+    color:beige;
+    margin: 0;
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+    text-align: center;
 }
 
 #run{
@@ -328,11 +347,13 @@ position: relative;
     margin: 0;
     font-family: "Courier New", monospace;
     font-weight: bold;
-
+    border-radius: 10px;
+    margin-top:13px;
+    border: 2px solid black;
 }
 
-#run:active:visited{
-    border-color: none;
+#run:focus {
+    outline:0;
 }
 
 #rightpart3{
@@ -347,11 +368,11 @@ position: relative;
     top: 50%;
     width: 325px;
     height: 170px;
-    background-color: darkseagreen;
+    background-color: dimgrey;
     display: flex;
     justify-content: left;
     align-items: center;
-
+    border: 2px solid black;
     border-radius: 10px;
 }
 
@@ -401,6 +422,7 @@ position: relative;
     justify-content: left;
     align-items: center;
     border-radius: 10px;
+    border: 2px solid black;
 }
 
 #phidden{
@@ -424,9 +446,12 @@ position: relative;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
+    margin-top: 22px;
+    border: 2px solid black;
 }
 #imageevolve{
-    text-indent:-9999px
+
+    text-indent:-9999px;
 }
 
 
